@@ -73,8 +73,8 @@ int main(){
 
 	yugiAction = findYugiAction(yugiScore);
 	if(yugiAction == 1){
-		
-		
+		yugiCards[2] = drawCard();
+		yugiScore = calScore(yugiCards[0],yugiCards[1],yugiCards[2]);
 
 		cout << "Yugi draws the 3rd card!!!\n";
 		cout << "Yugi's 3rd card: " << drawCard <<"\n";
